@@ -10,7 +10,7 @@
 	~/.bashrc: bash/bashrc
 	~/.bash_profile: bash/bash_profile
 	~/.bash_prompt: bash/bash_prompt	
-	~/.extra: extra
+	~/.extra: .extra
 	~/.gitconfig: gitconfig
 	~/.vim: vim/vim
 	~/.vimrc: vim/vimrc
