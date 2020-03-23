@@ -13,3 +13,6 @@
     ~/.gitconfig: .gitconfig
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
+
+- create:
+    - ~/.ssh
