@@ -13,6 +13,7 @@
     ~/.gitconfig: .gitconfig
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
+    ~/.alacritty.yml: alacritty.yml
 
 - create:
     - ~/.ssh
