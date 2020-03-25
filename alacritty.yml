@@ -204,7 +204,7 @@ colors:
         cyan:    '0xbf5656'
         white:   '0xf7f9fb'
 
-    draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: false
 
 # Background opacity
 #
@@ -219,7 +219,7 @@ colors:
   #save_to_clipboard: false
 
 # Allow terminal applications to change Alacritty's window title.
-#dynamic_title: true
+dynamic_title: true
 
 #cursor:
   # Cursor style
@@ -247,7 +247,7 @@ colors:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 #shell:
-#  program: /bin/bash
+#    program: /bin/bash
 #  args:
 #    - --login
 
