@@ -1,8 +1,38 @@
-#!/bin/bash
+# .bashrc
 
-for file in ~/.{bash_prompt}; do
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+
+export APPS="$HOME/apps/bin"
+export KUBECONFIG="$HOME/.kube/config"
+export CARGO="$HOME/.cargo/bin/cargo"
+export CARGO_HOME="$HOME/.cargo/bin"
+export DENO="/home/cwdesroches/.deno/bin"
+export PATH="$DENO:$CARGO_HOME:$KUBECONFIG:$APPS:$PATH"
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.keys/terraform-bot-gcp.json"
+export JAVA_HOME=/usr/lib/jvm/java-openjdk
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+for file in ~/.bash_prompt ~/.bash_functions; do
 	if [[ -r "$file" ]] && [[ -f "$file" ]]; then
 		source "$file"
 	fi
 done
 unset file
+
+complete -C /usr/local/bin/terraform terraform
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/cwdesroches/.sdkman"
+[[ -s "/home/cwdesroches/.sdkman/bin/sdkman-init.sh" ]] && source "/home/cwdesroches/.sdkman/bin/sdkman-init.sh"

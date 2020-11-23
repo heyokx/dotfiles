@@ -1,3 +1,18 @@
+# Colors
+black="30m"
+red="31m"
+green="32m"
+yellow="33m"
+blue="33m"
+purple="34m"
+cyan="35m"
+white="36m"
+
+# Text Format
+normal="0;"
+bold="1;"
+underlined="4;"
+reset="\e[0m"
 
 
 # Highlight the user name when logged in as root.
@@ -14,15 +29,7 @@ else
 	hostStyle="${cyan}";
 fi;
 
-PS1="\\[\\033]0;\\w\\007\\]";
-PS1+="\\[${bold}\\]\\n";
-PS1+="\\[${userStyle}\\]\\u";
-PS1+="\\[${white}\\] at ";
-PS1+="\\[${hostStyle}\\]${cloud}\\h"; # host
-PS1+="\\[${white}\\] in ";
-PS1+="\\[${green}\\]\\w"; # working directory
-PS1+="\\n";
-PS1+="\\[${white}\\]\$ \\[${reset}\\]"; # `$` (and reset color)
+PS1="\[\e[34m\]\u\[\e[m\]\[\e[37m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[35m\]\w\[\e[m\]\n\\$ "
 export PS1;
 
 PS2="\\[${yellow}\\]→ \\[${reset}\\]";

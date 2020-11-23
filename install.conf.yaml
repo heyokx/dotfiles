@@ -7,12 +7,13 @@
 
 - link:
     ~/.bashrc: bash/bashrc
+    ~/.bash_functions: bash/bash_functions
     ~/.bash_profile: bash/bash_profile
     ~/.bash_prompt: bash/bash_prompt
     ~/.extra: .extra
     ~/.gitconfig: .gitconfig
-    ~/.vim: vim/vim
-    ~/.vimrc: vim/vimrc
+    ~/.vim: vim
+    ~/.vimrc: vimrc
     ~/.alacritty.yml: alacritty.yml
 
 - create:
