@@ -6,15 +6,31 @@
 - clean: ['~']
 
 - link:
-    ~/.bashrc: bash/bashrc
-    ~/.bash_functions: bash/bash_functions
-    ~/.bash_profile: bash/bash_profile
-    ~/.bash_prompt: bash/bash_prompt
-    ~/.extra: .extra
-    ~/.gitconfig: .gitconfig
-    ~/.vim: vim
-    ~/.vimrc: vimrc
-    ~/.alacritty.yml: alacritty.yml
+    ~/.bash_profile: profile/bash/bash_profile
+    ~/.bashrc: profile/bash/bashrc
+    ~/.bash/:
+      create: true
+      glob: true
+      path: profile/bash/*
+      exclude: [profile/bash/bash_profile, profile/bash/bashrc]
+    ~/.extra: profile/extra
+    ~/.gitconfig: profile/gitconfig
+    ~/.vim: profile/vim
+    ~/.vimrc: profile/vimrc
+    ~/bin/nixgl-kitty: profile/bin/nixgl-kitty
+    ~/.config/kitty/:
+      create: true
+      glob: true
+      path: profile/kitty/*
 
 - create:
     - ~/.ssh
+    - ~/bin
+    - ~/dev
+
+- shell:
+    - 
+      command: bin/setup_kitty
+      description: Making kitty the default terminal
+      stdin: true
+      stdout: true
