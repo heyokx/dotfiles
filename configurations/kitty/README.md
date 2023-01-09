@@ -1,6 +1,6 @@
 # configurations/kitty
 
-Kitty is a terminal emulator.
+[Kitty](https://sw.kovidgoyal.net/kitty/) is a GPU based terminal emulator.
 
 ## Configuration Path
 - macOS: `~/.config/kitty`

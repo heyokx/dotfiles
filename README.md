@@ -9,8 +9,10 @@ TODO:
 - establish local specific and secret variable setup
 
 ## Configurations
-Here are the tools that I have configured in these dotfiles:
-- kitty
+Here are the tools that are configured in these dotfiles:
+- [kitty](./configurations/kitty/)
+- [fish](./configurations/fish)
 
 ## Local Specific & Secret Variables
-TODO
+The current mechanism for handling local specific configurations is specific to each tool configuration.
+See specific `./configurations/<tool>/README.md` for details on how it handles local configs.
