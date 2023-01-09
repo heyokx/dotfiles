@@ -1,11 +1,18 @@
 # dotfiles
 
-Shared config to be up and running as simple as learning to use a spoon.
+Development setup config to be up-and-running on different locals.
 
-Uses dotbot which is placed as a git submodule.
+TODO:
+- setup guide in readme
+- list any required tooling for dotfiles (if not part of installation phase of dotfiles)
+- list configs (add links to projects)
+- establish local specific and secret variable setup
 
+## Configurations
+Here are the tools that are configured in these dotfiles:
+- [kitty](./configurations/kitty/)
+- [fish](./configurations/fish)
 
-Inspired by:
-- https://github.com/jessfraz/dotfiles
-- https://github.com/anishathalye/dotfiles
-- https://github.com/mathiasbynens/dotfiles
+## Local Specific & Secret Variables
+The current mechanism for handling local specific configurations is specific to each tool configuration.
+See specific `./configurations/<tool>/README.md` for details on how it handles local configs.
