@@ -3,6 +3,11 @@ if status is-interactive
 end
 
 # Import local configs
-source $HOME/.config/fish/local/*
+if test -d $HOME/.config/fish/local -a (ls -1 $HOME/.config/fish/local | count) -gt 0
+  source $HOME/.config/fish/local/*
+end
 
-source (brew --prefix asdf)/libexec/asdf.fish
+if test (which brew | count) -gt 0
+  source (brew --prefix asdf)/libexec/asdf.fish
+  source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+end
