@@ -1,2 +1,4 @@
 # fish local files
 config/local
+config/fish_variables
+archive

@@ -16,3 +16,6 @@ Here are the tools that are configured in these dotfiles:
 ## Local Specific & Secret Variables
 The current mechanism for handling local specific configurations is specific to each tool configuration.
 See specific `./configurations/<tool>/README.md` for details on how it handles local configs.
+
+## Installation
+The installation script and procedure of a configuration can be found within the tool's configuration folder at `./configurations/<tool>/sync.fish`.
