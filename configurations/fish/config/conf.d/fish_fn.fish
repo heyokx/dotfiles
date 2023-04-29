@@ -29,3 +29,7 @@ function prm -d "Delete project from GHQ managed repositories"
         echo "Exiting.."
     end
 end
+
+function refresh-fish -d "Refresh local fish config (~/.config/fish/config.fish)."
+  source $__fish_config_dir/config.fish
+end

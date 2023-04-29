@@ -1,4 +1,4 @@
-# dotfiles/configurations/fish
+# Fish Shell (configurations/fish)
 
 [Fish](https://fishshell.com/) is the friendly interactive shell.
 
