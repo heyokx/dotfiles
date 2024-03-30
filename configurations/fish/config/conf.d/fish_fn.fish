@@ -6,7 +6,7 @@ function kac -d "Fetch configmap from pods of a given namespace"
 end
 
 function pcd -d "Git project utility"
-    set -l project (ghq list -p | fzf --height=\~100% --layout=reverse)
+    set -l project (ghq list -p | fzf --height=100% --layout=reverse)
     if contains $project (ghq list -p)
         cd $project
     end
@@ -38,7 +38,7 @@ function prm -d "Delete project from GHQ managed repositories"
 end
 
 function refresh-fish -d "Refresh local fish config (~/.config/fish/config.fish)."
-  source $__fish_config_dir/config.fish
+    source $__fish_config_dir/config.fish
 end
 
 function wt -d "Git worktree utility"
