@@ -1,7 +1,9 @@
 set -gx HOMEBASE_ROOT $HOME/Homebase
+set -gx HOMEBASE_WORKSPACE $HOMEBASE_ROOT/worktrees
 set -gx GHQ_ROOT $HOMEBASE_ROOT/git
 set -gx ASDF_ROOT $HOME/.asdf
 set -gx PYENV_ROOT $HOME/.pyenv
+set -gx VM_NIXOS mb-vm-nixos
 
 set -gx LDFLAGS -L/opt/homebrew/opt/llvm/lib
 set -gx CPPFLAGS -I/opt/homebrew/opt/llvm/include

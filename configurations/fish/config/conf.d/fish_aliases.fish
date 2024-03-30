@@ -1,8 +1,6 @@
-alias la "ls -lA"
+alias la "ls -lAh"
 alias k kubectl
-alias kcuc "kubectl config use-context"
 
-alias pcd "cd (ghq list -p | peco)"
 alias c "code ."
 alias p pnpm
 alias fish-edit "code ~/.config/fish"
@@ -14,5 +12,10 @@ abbr -a fe fish-edit
 abbr -a ke kitty-edit
 abbr -a lh ls -lh
 abbr -a gc git checkout
+abbr -a gcb git checkout -b
 abbr -a gl git log --oneline
+abbr -a gcm git commit -m
 abbr -a gaa git add --all
+abbr -a hb cd \$HOMEBASE_ROOT
+abbr -a vm-nixos ssh \$USER'@'\$VM_NIXOS
+abbr -a vm-code code --remote \$USER'@'\$VM_NIXOS
