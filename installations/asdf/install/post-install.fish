@@ -13,3 +13,6 @@ asdf plugin add clojure https://github.com/asdf-community/asdf-clojure.git
 
 # Nodejs Runtime
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+
+# Babashka
+asdf plugin add babashka https://github.com/pitch-io/asdf-babashka
