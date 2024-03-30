@@ -7,7 +7,7 @@ end
 
 function prm -d "Delete project from GHQ managed repositories"
     echo "Select a project to delete.."
-    set -l project (ghq list -p | fzf --height=\~100% --layout=reverse)
+    set -l project (ghq list -p | fzf --height=100% --layout=reverse)
     if contains $project (ghq list -p)
         echo "Are you sure you want to delete the project at path:"
         set_color yellow
@@ -17,7 +17,7 @@ function prm -d "Delete project from GHQ managed repositories"
         read -P "(y/N): " delete_project_prompt
         if test $delete_project_prompt = y
             echo "Deleting project.."
-            rm -r $project
+            rm -rf $project
             set_color green
             printf %s "Done:"
             set_color normal
