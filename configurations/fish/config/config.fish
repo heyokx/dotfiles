@@ -1,3 +1,8 @@
+if which brew &>/dev/null
+    source (brew --prefix asdf)/libexec/asdf.fish
+    source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+end
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -16,8 +21,3 @@ if test -d $__fish_config_dir/installations
 end
 
 source $__fish_config_dir/completions/p_completions.fish
-
-if which brew &>/dev/null
-    source (brew --prefix asdf)/libexec/asdf.fish
-    source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
-end
