@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: gitleaks-staged
+        name: gitleaks (staged changes)
+        # Wrapped in sh -c so `pre-commit run --all-files` does not pass file
+        # paths into `gitleaks git` (it only allows one optional repo arg).
+        entry: sh -c 'gitleaks git --pre-commit --redact=100 --staged --verbose'
+        language: system
+        pass_filenames: false
