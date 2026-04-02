@@ -4,6 +4,10 @@ config/local
 # fish installation files
 config/installations
 
+# Fisher hydro plugin generated files
+config/functions/fish_prompt.fish
+config/functions/fish_mode_prompt.fish
+
 # fish plugin functions
 config/functions/**
 !config/functions/fish_*.fish
