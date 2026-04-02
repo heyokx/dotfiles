@@ -165,9 +165,9 @@ function __get_wt_branches -d "Helper for worktree utility commands"
 end
 
 function fish_greeting -d "Personal fish greeting"
-    echo "  Logged on.."
-    echo "  ✍️" $USER
-    echo "  🖥️" $hostname
+    set_color green
+    echo "→ $USER@$hostname"
+    set_color normal
 end
 
 function krestart -d "Safely restarts all deployment pods within a namespace"
