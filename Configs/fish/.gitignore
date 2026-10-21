@@ -1,0 +1,29 @@
+# fish local files
+.config/fish/local
+
+# fish installation files
+.config/fish/installations
+
+# Fisher hydro plugin generated files
+.config/fish/functions/fish_prompt.fish
+.config/fish/functions/fish_mode_prompt.fish
+
+# fish plugin functions
+.config/fish/functions/**
+!.config/fish/functions/fish_*.fish
+
+# fish completions
+.config/fish/completions
+
+# fish conf.d
+.config/fish/conf.d/**
+!.config/fish/conf.d/fish_*.fish
+
+
+.config/fish/fish_variables
+
+# Fisher plugins are under installations/fisher/install/resources
+.config/fish/fish_plugins
+
+# Used to store any existing fish config during configuration setup
+archive
