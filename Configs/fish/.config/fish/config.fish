@@ -23,6 +23,3 @@ if test -d $__fish_config_dir/installations
         source $install_file
     end
 end
-
-source $__fish_config_dir/completions/p_completions.fish
-
