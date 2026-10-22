@@ -10,7 +10,6 @@
 
 # fish plugin functions
 .config/fish/functions/**
-!.config/fish/functions/fish_*.fish
 
 # fish completions
 .config/fish/completions
@@ -21,9 +20,6 @@
 
 
 .config/fish/fish_variables
-
-# Fisher plugins are under installations/fisher/install/resources
-.config/fish/fish_plugins
 
 # Used to store any existing fish config during configuration setup
 archive
